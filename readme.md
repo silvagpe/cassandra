@@ -4,7 +4,7 @@
 
 https://hub.docker.com/_/cassandra
 
-## Como conectar no cassandra pela linha de comando
+## Como conectar no cassandra pela linha de comando - **DOCKER**
 docker --name cqlshTerminal run -it --network cassandra_cass-network --rm cassandra cqlsh cassandra_cassandra_1
 
 
