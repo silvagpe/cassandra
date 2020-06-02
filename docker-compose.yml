@@ -1,0 +1,15 @@
+version: '3' #versão do compose
+
+services:  
+  cassandra:
+    image: cassandra     
+    ports: 
+      - 9042:9042   
+    volumes:
+        - /d/projetos/UV/Showroom/cassandra/cassandra_data:/data/db
+    networks:
+        - cass-network   
+networks: 
+    cass-network:
+      driver: bridge
+      
