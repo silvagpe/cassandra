@@ -6,7 +6,7 @@ services:
     ports: 
       - 9042:9042   
     volumes:
-        - /d/projetos/UV/Showroom/cassandra/cassandra_data:/data/db
+        - /d/projetos/UV/Showroom/cassandra/cassandra_data:/var/lib/cassandra
     networks:
         - cass-network   
 networks: 
